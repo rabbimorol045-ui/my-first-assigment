@@ -1,0 +1,383 @@
+ /* * BEGINNER CSS RESET */
+ */ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Inter', sans-serif;
+     color: #333;
+     line-height: 1.6;
+     background-color: #ffffff;
+ }
+
+ /* CONTAINER */
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ /* BUTTONS */
+ .btn {
+     padding: 12px 24px;
+     font-size: 16px;
+     font-weight: 600;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     transition: 0.3s;
+ }
+
+ /* Green Color from design */
+ .btn-primary {
+     background-color: #4CAF50;
+     /* Green */
+     color: white;
+ }
+
+ .btn-primary:hover {
+     background-color: #45a049;
+ }
+
+ .btn-secondary {
+     background-color: transparent;
+     border: 1px solid white;
+     color: white;
+ }
+
+ .btn-secondary:hover {
+     background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ .btn-icon {
+     width: 16px;
+     height: 16px;
+ }
+
+ /* NAVBAR */
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+ }
+
+ .nav-menu ul {
+     display: flex;
+     gap: 30px;
+ }
+
+ .nav-menu a {
+     font-size: 14px;
+     font-weight: 500;
+ }
+
+ .nav-menu a:hover {
+     color: #4CAF50;
+ }
+
+ /* BANNER */
+ .banner {
+     background-image: url('./assets/hero-bg.png');
+     background-size: cover;
+     background-position: center;
+     color: white;
+     text-align: center;
+     padding: 100px 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .banner-content {
+     max-width: 800px;
+ }
+
+ .pill {
+     display: inline-block;
+     background-color: white;
+     color: #333;
+     padding: 8px 16px;
+     border-radius: 50px;
+     font-size: 14px;
+     font-weight: 600;
+     margin-bottom: 20px;
+ }
+
+ .banner h1 {
+     font-size: 48px;
+     line-height: 1.2;
+     margin-bottom: 20px;
+     font-weight: 800;
+ }
+
+ .highlight {
+     color: #4CAF50;
+ }
+
+ .banner p {
+     font-size: 18px;
+     color: #e0e0e0;
+     margin-bottom: 40px;
+     max-width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .banner-actions {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+ }
+
+ /* NOTES SECTION */
+ .notes-section {
+     padding: 80px 20px;
+     text-align: center;
+     background-color: #fafafa;
+     /* Light gray bg for section */
+ }
+
+ .section-header {
+     margin-bottom: 50px;
+ }
+
+ .section-header h2 {
+     font-size: 36px;
+     color: #1a202c;
+     margin-bottom: 10px;
+ }
+
+ .section-header p {
+     color: #718096;
+ }
+
+ .cards-grid {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+     /* Beginner friendly grid alternative */
+ }
+
+ .card {
+     background: white;
+     padding: 30px;
+     border-radius: 10px;
+     width: 250px;
+     /* Fixed width for standard card size */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+     text-align: center;
+     transition: transform 0.3s;
+ }
+
+ .card:hover {
+     transform: translateY(-5px);
+ }
+
+ .card-icon {
+     width: 60px;
+     height: 60px;
+     margin: 0 auto 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+ }
+
+ .red-bg {
+     background-color: rgba(249, 85, 85, 1);
+     color: rgba(255, 255, 255, 1);
+     /* Light red/pinkish */
+ }
+
+ .card-icon img {
+     width: 30px;
+ }
+
+ .card h3 {
+     font-size: 18px;
+     margin-bottom: 10px;
+     color: #1a202c;
+ }
+
+ .card p {
+     font-size: 14px;
+     color: #718096;
+ }
+
+ /* SECOND BRAIN SECTION */
+ .second-brain-section {
+     padding: 80px 20px;
+     display: flex;
+     align-items: center;
+     gap: 50px;
+ }
+
+ .brain-image {
+     flex: 1;
+ }
+
+ .brain-content {
+     flex: 1;
+ }
+
+ .section-tag {
+     color: #4CAF50;
+     font-weight: 700;
+     font-size: 14px;
+     letter-spacing: 1px;
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ .brain-content h2 {
+     font-size: 40px;
+     color: #1a202c;
+     margin-bottom: 20px;
+     line-height: 1.2;
+ }
+
+ .brain-content p {
+     color: #718096;
+     margin-bottom: 30px;
+     font-size: 16px;
+ }
+
+ .brain-features li {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 15px;
+     color: #2d3748;
+     font-weight: 500;
+ }
+
+ .brain-features img {
+     width: 20px;
+ }
+
+ /* EARLY ACCESS (CHALLENGE) SECTION */
+ .early-access-section {
+     padding: 80px 20px;
+     background-color: #f7fafc;
+     /* Very light subtle background */
+ }
+
+ .access-content {
+     text-align: center;
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 60px;
+     background-color: #f7f7f5;
+     /* Matching the beige/off-white box in design */
+     border-radius: 12px;
+ }
+
+ .access-content h2 {
+     font-size: 32px;
+     color: #1a202c;
+     margin-bottom: 15px;
+ }
+
+ .subtitle {
+     color: #718096;
+     margin-bottom: 30px;
+ }
+
+ .access-action {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .small-text {
+     font-size: 12px;
+     color: #a0aec0;
+ }
+
+ /* FOOTER */
+ .footer {
+     background-color: #0d1b2a;
+     /* Dark Navy */
+     color: white;
+     padding: 60px 0 20px;
+ }
+
+ .footer-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 40px;
+ }
+
+ .footer-right {
+     text-align: right;
+ }
+
+ .social-label {
+     /* display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #a0aec0; */
+
+     color: rgba(255, 255, 255, 1);
+     width: 113px;
+     height: 28px;
+
+     font-family: Inter;
+     font-style: Medium;
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 28px;
+     letter-spacing: 0%;
+     text-align: center;
+     margin-right: 85px;
+
+ }
+
+ .social-icons {
+     display: flex;
+     gap: 15px;
+     color: rgba(0, 0, 0, 1);
+     /* background-color: rgba(255, 255, 255, 1); */
+     margin-right: 85px;
+     align-items: flex-start;
+     
+     
+
+ }
+
+ .social-icons img {
+     width: 20px;
+     filter: invert(1);
+     /* Make black icons white if they are black assets */
+ }
+
+ .footer-bottom {
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+     padding-top: 20px;
+     text-align: center;
+     font-size: 12px;
+     color: #718096;
+ }
